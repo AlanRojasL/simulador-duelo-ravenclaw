@@ -76,7 +76,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     padding: 20px;
     position: relative;
     z-index: 1;
@@ -158,6 +158,13 @@ body {
 }
 
 /* Buttons */
+.menu-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .btn {
     font-family: var(--font-sans);
     font-size: 1.1rem;
@@ -183,11 +190,42 @@ body {
     background: linear-gradient(135deg, var(--rc-bronze-light), #c49c5e);
 }
 
-.primary-btn:active {
+.secondary-btn {
+    background: transparent;
+    color: var(--rc-silver);
+    border: 2px solid var(--rc-silver);
+}
+
+.secondary-btn:hover {
+    background: rgba(224, 224, 224, 0.1);
+    transform: translateY(-2px);
+}
+
+.btn:active {
     transform: translateY(1px);
 }
 
-/* Game Header */
+.back-btn {
+    background: transparent;
+    border: none;
+    color: var(--rc-silver);
+    font-size: 0.9rem;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.back-btn::before {
+    content: "←";
+    font-size: 1.2rem;
+}
+.back-btn:hover {
+    color: var(--rc-white);
+    transform: translateX(-4px);
+}
+
+/* Game Header & Timer */
 .game-header {
     display: flex;
     justify-content: space-between;
@@ -202,6 +240,26 @@ body {
     font-weight: 600;
     color: var(--rc-bronze-light);
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.timer-container {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.timer-bar {
+    height: 100%;
+    background: var(--rc-bronze);
+    width: 100%;
+    transition: width 0.1s linear, background-color 0.3s;
+}
+
+.timer-bar.warning {
+    background: #e74c3c;
 }
 
 /* Question Section */
@@ -297,40 +355,304 @@ body {
 
 .errors-list {
     text-align: left;
-    max-height: 300px;
+    max-height: 350px;
     overflow-y: auto;
     padding-right: 10px;
     margin-bottom: 20px;
 }
 
-/* Custom Scrollbar for errors */
-.errors-list::-webkit-scrollbar {
-    width: 6px;
-}
-.errors-list::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 10px;
-}
-.errors-list::-webkit-scrollbar-thumb {
-    background: var(--rc-bronze);
-    border-radius: 10px;
-}
-
 .error-item {
     background: rgba(231, 76, 60, 0.1);
     border-left: 4px solid #e74c3c;
-    padding: 12px 16px;
-    margin-bottom: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
     border-radius: 0 8px 8px 0;
     font-size: 0.95rem;
 }
 
-.error-item strong {
-    color: #e74c3c;
+.error-item.time-out-correct {
+    background: rgba(243, 156, 18, 0.1);
+    border-left: 4px solid #f39c12;
 }
+
+.error-item p {
+    margin-bottom: 5px;
+}
+.error-item p:last-child {
+    margin-bottom: 0;
+}
+
+.error-item .error-label {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+.error-item.time-out-correct .error-label {
+    color: #f39c12;
+}
+
 .error-item .correct-answer {
     color: #2ecc71;
     font-weight: 600;
+}
+
+/* Study Mode Styles */
+.study-panel {
+    background: rgba(14, 26, 64, 0.85); 
+    padding: 0; /* Padding movido a los contenedores internos para scroll perfecto */
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sticky Header sólido para evitar superposiciones */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background: var(--rc-blue); /* Fondo azul profundo sólido */
+    z-index: 10;
+    padding: 20px 30px 10px 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px 16px 0 0;
+}
+
+.study-tabs {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--rc-silver);
+    font-family: var(--font-serif);
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    opacity: 1;
+}
+
+.tab-btn.active {
+    opacity: 1;
+    color: var(--rc-bronze);
+    border-bottom: 2px solid var(--rc-bronze);
+}
+
+/* Search Bar */
+.search-container {
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(148, 107, 45, 0.4);
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--rc-white);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--rc-bronze);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.search-input::placeholder {
+    color: rgba(224, 224, 224, 0.5);
+}
+
+/* Tab Content */
+.tab-content-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 20px 30px;
+    scroll-behavior: smooth;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease forwards;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.study-text-content h3 {
+    color: var(--rc-bronze-light);
+    font-family: var(--font-serif);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.study-text-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.study-text-content li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-left: 20px;
+    position: relative;
+    opacity: 0.9;
+}
+
+.study-text-content li::before {
+    content: "✦";
+    color: var(--rc-bronze);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+/* Spell Grid & Cards */
+.spell-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 700px) {
+    .spell-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.spell-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(148, 107, 45, 0.2);
+    border-radius: 12px;
+    padding: 24px; /* Padding cómodo */
+    height: auto; /* Crece dinámicamente */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.spell-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(148, 107, 45, 0.6);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.spell-card.hidden {
+    display: none;
+}
+
+.spell-name {
+    font-family: var(--font-serif);
+    color: var(--rc-bronze);
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.spell-pronunciation {
+    font-family: monospace;
+    color: var(--rc-silver);
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 15px;
+    display: block;
+    background: rgba(0,0,0,0.2);
+    padding: 2px 6px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+.spell-block {
+    margin-bottom: 10px;
+}
+
+.spell-block:last-child {
+    margin-bottom: 0;
+}
+
+.spell-block strong {
+    color: var(--rc-bronze-light);
+    font-weight: 600;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.spell-block span {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    display: block;
+}
+
+.spell-effective-against {
+    color: #2ecc71 !important;
+    text-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+}
+
+/* Scroll To Top Button */
+.scroll-top-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--rc-bronze);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-top-btn:hover {
+    background: var(--rc-bronze-light);
+    transform: translateY(-3px);
+}
+
+.scroll-top-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(10px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(148, 107, 45, 0.5);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 107, 45, 0.8);
 }
 
 /* Responsive adjustements */
@@ -343,5 +665,18 @@ body {
     }
     .question {
         font-size: 1.2rem;
+    }
+    .study-panel {
+        height: 90vh;
+    }
+    .sticky-header {
+        padding: 15px 15px 5px 15px;
+    }
+    .tab-content-container {
+        padding: 15px;
+    }
+    .scroll-top-btn {
+        right: 15px;
+        bottom: 15px;
     }
 }

@@ -1,0 +1,810 @@
+{
+  "ataques": [
+    {
+      "hechizo": "Aguamenti",
+      "contrahechizo": "Impervius",
+      "mimica": "Tu cuerpo está empapado",
+      "pronunciacion": "/awaménti/",
+      "descripcion": "Encantamiento creador de agua."
+    },
+    {
+      "hechizo": "Atabraquium",
+      "contrahechizo": "Emancipare",
+      "mimica": "Atado de tu cuerpo; pies y manos",
+      "pronunciacion": "/atabrákium/",
+      "descripcion": "Hechizo inmovilizador que ata las manos."
+    },
+    {
+      "hechizo": "Aqua Eructo",
+      "contrahechizo": "Glacius",
+      "mimica": "Fuerte empujo hacia atrás",
+      "pronunciacion": "/akua erúcto/",
+      "descripcion": "Crea un potente chorro de agua."
+    },
+    {
+      "hechizo": "Aurorium",
+      "contrahechizo": "Partis Temporus",
+      "mimica": "Apuntar al oponente",
+      "pronunciacion": "/aurórium/",
+      "descripcion": "Hechizo de humo que permite ocultarse o volar."
+    },
+    {
+      "hechizo": "Avis Oppugno",
+      "contrahechizo": "Arresto Momentum o Immobilus",
+      "mimica": "Te atacan aves",
+      "pronunciacion": "/avis opúgno/",
+      "descripcion": "Conjura aves y las lanza a atacar al oponente."
+    },
+    {
+      "hechizo": "Atmospheric Charm",
+      "contrahechizo": "Meteolojinx Recanto",
+      "mimica": "Sobre el lugar del oponente hay una pequeña tormenta",
+      "pronunciacion": "/atmosférik charm/",
+      "descripcion": "Hechizo que modifica el clima localmente."
+    },
+    {
+      "hechizo": "Bombarda",
+      "contrahechizo": "Brackium Emendo, Episkey o Ferula",
+      "mimica": "Sufres un empujón y ardor en el pecho",
+      "pronunciacion": "/bombárda/",
+      "descripcion": "Hechizo que provoca una pequeña explosión."
+    },
+    {
+      "hechizo": "Carpe Retractum",
+      "contrahechizo": "Emancipare",
+      "mimica": "Le dan jalones a tu cuerpo en diferentes direcciones",
+      "pronunciacion": "/karpe retráctum/",
+      "descripcion": "Hechizo que atrae objetos o personas hacia el lanzador."
+    },
+    {
+      "hechizo": "Cave Inimicum",
+      "contrahechizo": "Partis Temporus",
+      "mimica": "Fingir que tu oponente desapareció",
+      "pronunciacion": "/cáve inímicum/",
+      "descripcion": "Hechizo protector que oculta la presencia."
+    },
+    {
+      "hechizo": "Colloshoo",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Pies pegados al suelo",
+      "pronunciacion": "/cóloshuu/",
+      "descripcion": "Maleficio que pega los zapatos al suelo."
+    },
+    {
+      "hechizo": "Confringo",
+      "contrahechizo": "Episkey, Ferula o Brackium Emendo",
+      "mimica": "Te cubres con el brazo por las explosiones",
+      "pronunciacion": "/konfríngo/",
+      "descripcion": "Maldición explosiva que hace estallar el objetivo."
+    },
+    {
+      "hechizo": "Confundus",
+      "contrahechizo": "Shock",
+      "mimica": "Das vueltas o giras confundido",
+      "pronunciacion": "/konfúndus/",
+      "descripcion": "Encantamiento que confunde a la víctima."
+    },
+    {
+      "hechizo": "Conjuntivitis",
+      "contrahechizo": "Finite incantatem",
+      "mimica": "No puedes ver y te frotas los ojos por el ardor",
+      "pronunciacion": "/konjuntivítis/",
+      "descripcion": "Maldición que afecta los ojos, causando irritación y ceguera temporal."
+    },
+    {
+      "hechizo": "Deprimo",
+      "contrahechizo": "Ascendio",
+      "mimica": "Te dejas caer",
+      "pronunciacion": "/deprímo/",
+      "descripcion": "Hechizo que causa una gran presión hacia abajo."
+    },
+    {
+      "hechizo": "Densaugeo",
+      "contrahechizo": "Reducio",
+      "mimica": "Dolor intenso en los dientes",
+      "pronunciacion": "/densáujeo/",
+      "descripcion": "Maleficio que hace crecer los dientes desproporcionadamente."
+    },
+    {
+      "hechizo": "Defodio",
+      "contrahechizo": "Ascendio",
+      "mimica": "Te caes en agujeros profundos",
+      "pronunciacion": "/defódio/",
+      "descripcion": "Encantamiento excavador para cavar a través de roca o tierra."
+    },
+    {
+      "hechizo": "Depulso",
+      "contrahechizo": "Accio varita",
+      "mimica": "Te derriba y sueltas la varita",
+      "pronunciacion": "/depúlso/",
+      "descripcion": "Encantamiento repulsor, empuja los objetos lejos."
+    },
+    {
+      "hechizo": "Descendo",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Todo tu cuerpo está en el suelo y no te puedes levantar",
+      "pronunciacion": "/desséndo/",
+      "descripcion": "Hechizo que hace que las cosas caigan o desciendan."
+    },
+    {
+      "hechizo": "Diffindo",
+      "contrahechizo": "Episkey",
+      "mimica": "Sufres cortes",
+      "pronunciacion": "/difíndo/",
+      "descripcion": "Encantamiento seccionador, corta objetos físicos."
+    },
+    {
+      "hechizo": "Engorgio",
+      "contrahechizo": "Reducio",
+      "mimica": "Te provoca hinchazones en las manos dolorosas",
+      "pronunciacion": "/engóryio/",
+      "descripcion": "Encantamiento aumentador, hace crecer objetos o criaturas."
+    },
+    {
+      "hechizo": "Entomorphis",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Gatear o actuar como insecto",
+      "pronunciacion": "/entomórfis/",
+      "descripcion": "Maleficio que transforma a la víctima en un insecto humanoide."
+    },
+    {
+      "hechizo": "Ebublio",
+      "contrahechizo": "Diffindo",
+      "mimica": "Atrapado en una enorme burbuja",
+      "pronunciacion": "/ebúblio/",
+      "descripcion": "Maleficio que atrapa a la víctima en una burbuja gigante."
+    },
+    {
+      "hechizo": "Expelliarmus",
+      "contrahechizo": "Accio Varita",
+      "mimica": "La varita sale volando 2 metros de tus manos",
+      "pronunciacion": "/ekspeliármus/",
+      "descripcion": "Encantamiento de desarme, quita la varita al oponente."
+    },
+    {
+      "hechizo": "Expulso",
+      "contrahechizo": "Episkey, Ferula o Brackium Emendo",
+      "mimica": "Explosiones",
+      "pronunciacion": "/ekspúlso/",
+      "descripcion": "Maldición que produce una explosión por presión."
+    },
+    {
+      "hechizo": "Everte Statum",
+      "contrahechizo": "Ferula",
+      "mimica": "Te empuja hacia atrás fuertemente",
+      "pronunciacion": "/evérte státum/",
+      "descripcion": "Hechizo de duelo que hace tropezar y lanzar hacia atrás."
+    },
+    {
+      "hechizo": "Fiendfyre",
+      "contrahechizo": "Fiendlocked",
+      "mimica": "Eres rodeado por fuego y parte de tu ropa se quema",
+      "pronunciacion": "/findfáyah/",
+      "descripcion": "Fuego maligno, fuego incontrolable que destruye todo."
+    },
+    {
+      "hechizo": "Flipendo",
+      "contrahechizo": "Ferula",
+      "mimica": "Te empuja fuerte por los aires",
+      "pronunciacion": "/flipéndo/",
+      "descripcion": "Maleficio rechazador, empuja al oponente físicamente."
+    },
+    {
+      "hechizo": "Fulgari",
+      "contrahechizo": "Emancipare",
+      "mimica": "Atado de brazos",
+      "pronunciacion": "/fulgári/",
+      "descripcion": "Hechizo que invoca cuerdas mágicas para atar los brazos."
+    },
+    {
+      "hechizo": "Fumos",
+      "contrahechizo": "Ventus",
+      "mimica": "No puedes ver",
+      "pronunciacion": "/fúmos/",
+      "descripcion": "Hechizo defensivo que crea una pantalla de humo espeso."
+    },
+    {
+      "hechizo": "Furnunculus",
+      "contrahechizo": "Tergeo",
+      "mimica": "Todo tu rostro te arde y no puedes ver",
+      "pronunciacion": "/furnúnkulus/",
+      "descripcion": "Maleficio que causa que la víctima se llene de furúnculos."
+    },
+    {
+      "hechizo": "Glacius",
+      "contrahechizo": "Incendio",
+      "mimica": "Tu cuerpo está parcialmente congelado",
+      "pronunciacion": "/glásius/",
+      "descripcion": "Hechizo congelador, emite aire helado que congela el objetivo."
+    },
+    {
+      "hechizo": "Herbivicus",
+      "contrahechizo": "Diffindo",
+      "mimica": "Plantas en enredadera te atan por todos lados",
+      "pronunciacion": "/erbíbikus/",
+      "descripcion": "Encantamiento que acelera el crecimiento de las plantas."
+    },
+    {
+      "hechizo": "Incarcerus",
+      "contrahechizo": "Diffindo",
+      "mimica": "Te cruzas los brazos en tu cuerpo para liberarte",
+      "pronunciacion": "/inkarcérus/",
+      "descripcion": "Conjura cuerdas gruesas que atan a la víctima."
+    },
+    {
+      "hechizo": "Incendio",
+      "contrahechizo": "Extinguishing Spell",
+      "mimica": "Se quema tu ropa y cuerpo",
+      "pronunciacion": "/inséndio/",
+      "descripcion": "Hechizo creador de fuego."
+    },
+    {
+      "hechizo": "Immobilus",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Te mueves muy lentamente",
+      "pronunciacion": "/inmóbilus/",
+      "descripcion": "Hechizo que inmoviliza y detiene las acciones del objetivo."
+    },
+    {
+      "hechizo": "Impedimenta",
+      "contrahechizo": "Reparifors",
+      "mimica": "Te congelas y sufres un empujón para atrás",
+      "pronunciacion": "/impediménta/",
+      "descripcion": "Maleficio obstaculizador, ralentiza o detiene al oponente."
+    },
+    {
+      "hechizo": "Inflatus",
+      "contrahechizo": "Reducio",
+      "mimica": "Se infla",
+      "pronunciacion": "/inflátus/",
+      "descripcion": "Maleficio que infla al objetivo como un globo."
+    },
+    {
+      "hechizo": "Levioso",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Finges levitar",
+      "pronunciacion": "/levióso/",
+      "descripcion": "Encantamiento levitatorio simple."
+    },
+    {
+      "hechizo": "Lacarnum Inflamarae",
+      "contrahechizo": "Aguamenti",
+      "mimica": "Se incendia tu ropa",
+      "pronunciacion": "/lakárnum inflamáre/",
+      "descripcion": "Hechizo que enciende objetos en llamas (variante de Incendio)."
+    },
+    {
+      "hechizo": "Locomotor Mortis",
+      "contrahechizo": "Finite Incantatem o Finite",
+      "mimica": "Tus piernas se juntan y no puedes moverte",
+      "pronunciacion": "/locomótor mórtis/",
+      "descripcion": "Maleficio de las piernas unidas."
+    },
+    {
+      "hechizo": "Levicorpus",
+      "contrahechizo": "Liberacorpus",
+      "mimica": "Te jalan del tobillo",
+      "pronunciacion": "/liberakórpus/",
+      "descripcion": "Maleficio no verbal que cuelga a la víctima por el tobillo."
+    },
+    {
+      "hechizo": "Mimblewimble",
+      "contrahechizo": "Finite",
+      "mimica": "Tartamudeas",
+      "pronunciacion": "/mimbol wimbol/",
+      "descripcion": "Maldición de la lengua atada, impide hablar correctamente."
+    },
+    {
+      "hechizo": "Muffliato",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Te quedas sordo",
+      "pronunciacion": "/mufliáto/",
+      "descripcion": "Hechizo que llena los oídos de zumbidos indescifrables."
+    },
+    {
+      "hechizo": "Melofors",
+      "contrahechizo": "Finite Incantatem",
+      "mimica": "Te agarras la cabeza de forma desesperada",
+      "pronunciacion": "/mélofors/",
+      "descripcion": "Maleficio que envuelve la cabeza del objetivo en una calabaza."
+    },
+    {
+      "hechizo": "Mobilicorpus",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Oponente controla tu cuerpo de izquierda y derecha",
+      "pronunciacion": "/mobilikórpus/",
+      "descripcion": "Hechizo para mover cuerpos inconscientes flotando."
+    },
+    {
+      "hechizo": "Mocomurciélago",
+      "contrahechizo": "Tergeo",
+      "mimica": "Mocos se transforman en grandes murciélagos",
+      "pronunciacion": "/mocomurciélago/",
+      "descripcion": "Maleficio que transforma los mocos en murciélagos que atacan."
+    },
+    {
+      "hechizo": "Nebulus",
+      "contrahechizo": "Ventus",
+      "mimica": "No puede ver bien",
+      "pronunciacion": "/nébulus/",
+      "descripcion": "Hechizo que invoca una espesa niebla."
+    },
+    {
+      "hechizo": "Obscuro",
+      "contrahechizo": "Diffindo",
+      "mimica": "Te quedas ciego por una venda",
+      "pronunciacion": "/obskúro/",
+      "descripcion": "Hechizo que conjura una venda sobre los ojos de la víctima."
+    },
+    {
+      "hechizo": "Pericullum",
+      "contrahechizo": "Episkey",
+      "mimica": "Retrocedes y tu pecho te arde por la quemazón",
+      "pronunciacion": "/períkulum/",
+      "descripcion": "Hechizo que lanza chispas rojas de señalización."
+    },
+    {
+      "hechizo": "Penetro",
+      "contrahechizo": "Nottium Argentum",
+      "mimica": "Apuntar al oponente",
+      "pronunciacion": "/penétro/",
+      "descripcion": "Maldición que perfora o penetra defensas."
+    },
+    {
+      "hechizo": "Punzar",
+      "contrahechizo": "Ferula",
+      "mimica": "Heridas leves",
+      "pronunciacion": "/punsár/",
+      "descripcion": "Hechizo punzante que causa heridas similares a picaduras."
+    },
+    {
+      "hechizo": "Reducto",
+      "contrahechizo": "Ferula o Brackium Emendo",
+      "mimica": "Explosión",
+      "pronunciacion": "/rredúkto/",
+      "descripcion": "Maldición reductora, destruye objetos sólidos en pedazos."
+    },
+    {
+      "hechizo": "Relashio",
+      "contrahechizo": "Accio varita",
+      "mimica": "Sueltas tu varita",
+      "pronunciacion": "/rreláshio/",
+      "descripcion": "Embrujo que obliga a soltar lo que se esté sosteniendo."
+    },
+    {
+      "hechizo": "Relaskio",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Resbálate",
+      "pronunciacion": "/rreláskio/",
+      "descripcion": "Variante de Relashio / Embrujo para zafarse."
+    },
+    {
+      "hechizo": "Rictusempra",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Te produce risa por un corto tiempo",
+      "pronunciacion": "/riktu sémpra/",
+      "descripcion": "Encantamiento cosquilleador."
+    },
+    {
+      "hechizo": "Serpensortia",
+      "contrahechizo": "Vipera Evanesca",
+      "mimica": "Te atacan serpientes",
+      "pronunciacion": "/serpen sórtia/",
+      "descripcion": "Hechizo que invoca una serpiente de la varita."
+    },
+    {
+      "hechizo": "Tarantallegra",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Los pies se mueven bailando",
+      "pronunciacion": "/tarantalégra/",
+      "descripcion": "Hechizo que obliga a las piernas del objetivo a bailar descontroladamente."
+    },
+    {
+      "hechizo": "Sectumsempra",
+      "contrahechizo": "Vulnera Sanentur",
+      "mimica": "Recibe un corte profundo",
+      "pronunciacion": "/sectum sémpra/",
+      "descripcion": "Maldición de magia oscura que provoca profundos cortes."
+    },
+    {
+      "hechizo": "Slugulus Eructo",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Vomita babosas",
+      "pronunciacion": "/slúgulus erúkto/",
+      "descripcion": "Maldición de vomitar babosas."
+    },
+    {
+      "hechizo": "Volate Ascendere",
+      "contrahechizo": "Ferula",
+      "mimica": "Saltas y te dejas caer",
+      "pronunciacion": "/voláte aséndere/",
+      "descripcion": "Hechizo que lanza objetos o personas por los aires."
+    },
+    {
+      "hechizo": "Ventus",
+      "contrahechizo": "Ferula",
+      "mimica": "Un pequeño tornado te lanza por los aires",
+      "pronunciacion": "/véntus/",
+      "descripcion": "Hechizo que lanza una fuerte ráfaga de viento."
+    },
+    {
+      "hechizo": "Vermillious",
+      "contrahechizo": "Episkey",
+      "mimica": "Eres atacado por chispas de fuegos artificiales",
+      "pronunciacion": "/vermílius/",
+      "descripcion": "Hechizo ofensivo que lanza chispas rojas."
+    },
+    {
+      "hechizo": "Verdimillious",
+      "contrahechizo": "Episkey o Ferula",
+      "mimica": "Te provoca descarga eléctrica que te hace volar",
+      "pronunciacion": "/verdimílius/",
+      "descripcion": "Hechizo ofensivo que lanza energía verde."
+    },
+    {
+      "hechizo": "Water Prison",
+      "contrahechizo": "Partis Temporus",
+      "mimica": "Te ahogas",
+      "pronunciacion": "/woter príshon/",
+      "descripcion": "Hechizo que atrapa al objetivo en una esfera de agua."
+    },
+    {
+      "hechizo": "Waddiwasi",
+      "contrahechizo": "Anapneo",
+      "mimica": "Te ahogas",
+      "pronunciacion": "/wadi wasi/",
+      "descripcion": "Hechizo que dispara pequeños objetos a gran velocidad."
+    },
+    {
+      "hechizo": "Desmaius",
+      "contrahechizo": "Ennervate",
+      "mimica": "Cae, queda inmóvil e inconsciente",
+      "pronunciacion": "Pronunciación no especificada",
+      "descripcion": "Encantamiento aturdidor."
+    },
+    {
+      "hechizo": "Petrificus Totalus",
+      "contrahechizo": "Finite o Finite Incantatem",
+      "mimica": "Inmoviliza totalmente a la víctima",
+      "pronunciacion": "Pronunciación no especificada",
+      "descripcion": "Maleficio de parálisis corporal total."
+    },
+    {
+      "hechizo": "Obliviate",
+      "contrahechizo": "Finite",
+      "mimica": "Amnesia",
+      "pronunciacion": "Pronunciación no especificada",
+      "descripcion": "Encantamiento desmemorizante."
+    },
+    {
+      "hechizo": "Silencius",
+      "contrahechizo": "Finite",
+      "mimica": "El oponente pierde un turno de hechizo",
+      "pronunciacion": "Pronunciación no especificada",
+      "descripcion": "Encantamiento silenciador."
+    },
+    {
+      "hechizo": "Oscausi",
+      "contrahechizo": "Finite",
+      "mimica": "Sella la boca y el oponente pierde un turno",
+      "pronunciacion": "Pronunciación no especificada",
+      "descripcion": "Hechizo que sella la boca del objetivo."
+    }
+  ],
+  "contrahechizos": [
+    {
+      "hechizo": "Accio Varita",
+      "descripcion": "Encantamiento convocador. Atrae la varita perdida hacia el lanzador.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Depulso",
+        "Expelliarmus",
+        "Relashio"
+      ]
+    },
+    {
+      "hechizo": "Aguamenti",
+      "descripcion": "Encantamiento creador de agua. Conjura un chorro de agua limpia.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Lacarnum Inflamarae"
+      ]
+    },
+    {
+      "hechizo": "Anapneo",
+      "descripcion": "Hechizo sanador que despeja las vías respiratorias y evita la asfixia.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Waddiwasi"
+      ]
+    },
+    {
+      "hechizo": "Arresto Momentum",
+      "descripcion": "Disminuye la velocidad de caída de un objeto o persona.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Avis Oppugno"
+      ]
+    },
+    {
+      "hechizo": "Ascendio",
+      "descripcion": "Encantamiento que levanta al lanzador hacia arriba en el aire.",
+      "mimica": "Apuntar varita hacia arriba.",
+      "efectivo_contra": [
+        "Deprimo",
+        "Defodio"
+      ]
+    },
+    {
+      "hechizo": "Diffindo",
+      "descripcion": "Encantamiento seccionador. Corta cosas con precisión.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Ebublio",
+        "Herbivicus",
+        "Incarcerus",
+        "Obscuro"
+      ]
+    },
+    {
+      "hechizo": "Emancipare",
+      "descripcion": "Encantamiento liberador. Desata ataduras mágicas.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Atabraquium",
+        "Carpe Retractum",
+        "Fulgari"
+      ]
+    },
+    {
+      "hechizo": "Extinguishing Spell",
+      "descripcion": "Hechizo extintor. Apaga incendios mágicos y comunes.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Incendio"
+      ]
+    },
+    {
+      "hechizo": "Fiendlocked",
+      "descripcion": "Contrahechizo complejo que encierra y apaga el Fuego Maligno.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Fiendfyre"
+      ]
+    },
+    {
+      "hechizo": "Finite Incantatem",
+      "descripcion": "Hechizo que finaliza o anula los efectos de múltiples hechizos en un área.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Colloshoo",
+        "Conjuntivitis",
+        "Descendo",
+        "Entomorphis",
+        "Immobilus",
+        "Levioso",
+        "Locomotor Mortis",
+        "Muffliato",
+        "Melofors",
+        "Mobilicorpus",
+        "Relaskio",
+        "Rictusempra",
+        "Tarantallegra",
+        "Slugulus Eructo",
+        "Petrificus Totalus"
+      ]
+    },
+    {
+      "hechizo": "Finite",
+      "descripcion": "Contrahechizo que anula el efecto de un hechizo específico.",
+      "mimica": "Apuntar la varita así mismo.",
+      "efectivo_contra": [
+        "Colloshoo",
+        "Descendo",
+        "Entomorphis",
+        "Immobilus",
+        "Levioso",
+        "Locomotor Mortis",
+        "Mimblewimble",
+        "Muffliato",
+        "Mobilicorpus",
+        "Relaskio",
+        "Rictusempra",
+        "Tarantallegra",
+        "Slugulus Eructo",
+        "Petrificus Totalus",
+        "Obliviate",
+        "Silencius",
+        "Oscausi"
+      ]
+    },
+    {
+      "hechizo": "Glacius",
+      "descripcion": "Encantamiento congelador. Emite aire gélido desde la punta de la varita.",
+      "mimica": "Congela el agua.",
+      "efectivo_contra": [
+        "Aqua Eructo"
+      ]
+    },
+    {
+      "hechizo": "Immobulus",
+      "descripcion": "Encantamiento inmovilizador. Detiene el movimiento y la acción.",
+      "mimica": "Apuntar la varita.",
+      "efectivo_contra": []
+    },
+    {
+      "hechizo": "Impervius",
+      "descripcion": "Encantamiento que repele el agua y otras sustancias.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Aguamenti"
+      ]
+    },
+    {
+      "hechizo": "Incendio",
+      "descripcion": "Encantamiento creador de fuego.",
+      "mimica": "Las llamas derriten el hielo.",
+      "efectivo_contra": [
+        "Glacius"
+      ]
+    },
+    {
+      "hechizo": "Liberacorpus",
+      "descripcion": "Contrahechizo específico para anular Levicorpus.",
+      "mimica": "Apuntar a tus tobillos.",
+      "efectivo_contra": [
+        "Levicorpus"
+      ]
+    },
+    {
+      "hechizo": "Meteolojinx Recanto",
+      "descripcion": "Contrahechizo que anula los efectos climáticos alterados mágicamente.",
+      "mimica": "Apuntar la varita al Cielo.",
+      "efectivo_contra": [
+        "Atmospheric Charm"
+      ]
+    },
+    {
+      "hechizo": "Nottium Argentum",
+      "descripcion": "Hechizo defensivo que crea una barrera de plata líquida.",
+      "mimica": "Simular uso de un escudo con el antebrazo.",
+      "efectivo_contra": [
+        "Penetro"
+      ]
+    },
+    {
+      "hechizo": "Partis Temporus",
+      "descripcion": "Crea una abertura temporal en barreras mágicas como fuego o agua.",
+      "mimica": "Apuntar la varita al oponente.",
+      "efectivo_contra": [
+        "Aurorium",
+        "Cave Inimicum",
+        "Water Prison"
+      ]
+    },
+    {
+      "hechizo": "Reducio",
+      "descripcion": "Encantamiento encogedor. Revierte los efectos de Engorgio.",
+      "mimica": "Apuntar la varita al oponente.",
+      "efectivo_contra": [
+        "Densaugeo",
+        "Engorgio",
+        "Inflatus"
+      ]
+    },
+    {
+      "hechizo": "Ventus",
+      "descripcion": "Encantamiento que crea una ráfaga de viento en espiral.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Fumos",
+        "Nebulus"
+      ]
+    },
+    {
+      "hechizo": "Vipera Evanesca",
+      "descripcion": "Hechizo desvanecedor que hace desaparecer serpientes conjuradas.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Serpensortia"
+      ]
+    },
+    {
+      "hechizo": "Tergeo",
+      "descripcion": "Encantamiento limpiador. Absorbe líquidos o sustancias no deseadas.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Furnunculus",
+        "Mocomurciélago"
+      ]
+    }
+  ],
+  "curacion": [
+    {
+      "hechizo": "Episkey",
+      "descripcion": "Encantamiento sanador para curar heridas y lesiones menores.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Bombarda",
+        "Confringo",
+        "Diffindo",
+        "Expulso",
+        "Pericullum",
+        "Vermillious",
+        "Verdimillious"
+      ]
+    },
+    {
+      "hechizo": "Brackium Emendo",
+      "descripcion": "Hechizo sanador diseñado para reparar huesos rotos.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Bombarda",
+        "Confringo",
+        "Expulso",
+        "Reducto"
+      ]
+    },
+    {
+      "hechizo": "Ennervate",
+      "descripcion": "Encantamiento reanimador. Revive a las víctimas aturdidas.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Desmaius"
+      ]
+    },
+    {
+      "hechizo": "Ferula",
+      "descripcion": "Conjura vendas y tablillas mágicas para inmovilizar fracturas.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Bombarda",
+        "Confringo",
+        "Expulso",
+        "Everte Statum",
+        "Flipendo",
+        "Punzar",
+        "Reducto",
+        "Volate Ascendere",
+        "Ventus",
+        "Verdimillious"
+      ]
+    },
+    {
+      "hechizo": "Reparifors",
+      "descripcion": "Hechizo de curación menor que cura dolencias inducidas mágicamente.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Impedimenta"
+      ]
+    },
+    {
+      "hechizo": "Shock",
+      "descripcion": "Hechizo o encantamiento de reanimación mental y física.",
+      "mimica": null,
+      "efectivo_contra": [
+        "Confundus"
+      ]
+    },
+    {
+      "hechizo": "Vulnera Sanenturn",
+      "descripcion": "Hechizo curativo avanzado para heridas graves de magia oscura.",
+      "mimica": null,
+      "efectivo_contra": []
+    }
+  ],
+  "reglas": [
+    "Un duelo solo es válido si es mediado por un juez.",
+    "El ganador es el primero en ganar 2 de 3 rondas.",
+    "En caso de empate después del tiempo máximo (5 minutos), el juez elige al ganador basado en quién realizó la mejor mímica.",
+    "El juez es responsable de presentar el duelo, supervisar el saludo formal (Firmes, saludo, reverencia, vuelta, y en guardia) e indicar qué duelista comienza.",
+    "Cada duelista puede tener un testigo para ayudar al juez. El juez puede despedir al testigo si hace 3 observaciones incorrectas.",
+    "Penalizaciones (Pérdida de puntos): Quedarse en silencio, mala pronunciación o tartamudeo, fallar en realizar la mímica requerida, repetir el mismo hechizo de ataque más de 3 veces, repetir el último hechizo del oponente.",
+    "El duelista que perdió un punto de vida es quien reinicia el duelo."
+  ],
+  "normas": [
+    "Mímica: El juez evalúa la actuación física/mímica que realiza el duelista basado en el hechizo lanzado o recibido.",
+    "Hechizo: El hechizo debe ser pronunciado fuerte y claro.",
+    "Tiempo: El juez concede 3 segundos para que un duelista actúe (hable o haga mímica) si se queda en silencio. Si no hay acción en este tiempo, pierde un punto."
+  ]
+}

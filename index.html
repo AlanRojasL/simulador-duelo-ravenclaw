@@ -5,42 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Duelo - Ravenclaw</title>
     <meta name="description" content="Simulador de duelo interactivo para estudiantes de la casa Ravenclaw. Practica tus contrahechizos y mímicas.">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Elements -->
     <div class="bg-stars"></div>
     <div class="bg-glow"></div>
     
     <main class="container">
-        <!-- Pantalla de Inicio -->
+        <!-- Menú Principal -->
         <section id="start-screen" class="screen active">
             <div class="glass-panel text-center">
                 <div class="house-emblem">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/RavenclawCrest.png/400px-RavenclawCrest.png" alt="Emblema de Ravenclaw" class="ravenclaw-logo" onerror="this.style.display='none'">
                 </div>
-                <h1 class="main-title">Simulador de Duelo</h1>
+                <h1 class="main-title">Club de Duelo</h1>
                 <h2 class="subtitle">Casa Ravenclaw</h2>
                 <p class="description">Pon a prueba tu intelecto y rapidez. Demuestra que posees la mente más aguda del Club de Duelo.</p>
-                <button id="start-btn" class="btn primary-btn mt-4">Iniciar Entrenamiento</button>
+                <div class="menu-buttons mt-4">
+                    <button id="study-btn" class="btn secondary-btn">Modo Estudio</button>
+                    <button id="start-btn" class="btn primary-btn">Modo Duelo</button>
+                </div>
             </div>
         </section>
 
-        <!-- Pantalla de Juego -->
+        <!-- Modo Estudio -->
+        <section id="study-screen" class="screen hidden">
+            <button id="back-from-study-btn" class="btn back-btn">Volver al Menú</button>
+            <div class="glass-panel study-panel">
+                <h2 class="main-title text-center">Biblioteca de Duelo</h2>
+                
+                <div class="sticky-header">
+                    <!-- Navegación de Pestañas -->
+                    <div class="study-tabs">
+                        <button class="tab-btn active" data-tab="reglas">Reglas y Normas</button>
+                        <button class="tab-btn" data-tab="ataques">Hechizos de Ataque</button>
+                        <button class="tab-btn" data-tab="contrahechizos">Contrahechizos</button>
+                        <button class="tab-btn" data-tab="curacion">Hechizos de Curación</button>
+                    </div>
+                </div>
+                
+                <!-- Contenedores de Pestañas -->
+                <div id="study-content-container" class="tab-content-container">
+                    <!-- Pestaña Reglas -->
+                    <article id="tab-reglas" class="tab-content active study-text-content">
+                        <h3>Reglas Generales del Duelo</h3>
+                        <ul id="rules-list"></ul>
+                        
+                        <h3>Normas de los Jueces</h3>
+                        <ul id="norms-list"></ul>
+                    </article>
+
+                    <!-- Pestaña Hechizos/Grid -->
+                    <article id="tab-spells" class="tab-content">
+                        <div class="search-container">
+                            <input type="search" id="spell-search" class="search-input" placeholder="Buscar por hechizo, contrahechizo o efecto...">
+                        </div>
+                        <div id="spells-grid" class="spell-grid">
+                            <!-- Tarjetas de hechizos -->
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- Botón flotante -->
+            <button id="scroll-top-btn" class="scroll-top-btn hidden">↑</button>
+        </section>
+
+        <!-- Modo Duelo (Quiz) -->
         <section id="game-screen" class="screen hidden">
+            <button id="back-from-game-btn" class="btn back-btn" style="margin-bottom: 10px;">Salir del Duelo</button>
             <div class="game-header">
                 <span id="round-indicator" class="round-badge">Ronda 1/10</span>
                 <span id="score-indicator" class="score-badge">Puntaje: 0</span>
             </div>
             
             <div class="glass-panel question-panel">
+                <div class="timer-container">
+                    <div id="timer-bar" class="timer-bar"></div>
+                </div>
                 <h2 id="question-text" class="question">Cargando pregunta...</h2>
                 <div id="options-container" class="options-grid">
-                    <!-- Los botones de opciones se generarán aquí con JS -->
+                    <!-- Botones de opciones -->
                 </div>
             </div>
         </section>
@@ -55,10 +102,13 @@
                 <p id="score-message" class="score-message">Calculando resultados...</p>
                 
                 <div id="errors-container" class="errors-list">
-                    <!-- Resumen de errores se generará aquí -->
+                    <!-- Resumen de errores -->
                 </div>
                 
-                <button id="restart-btn" class="btn primary-btn mt-4">Volver a Duelear</button>
+                <div class="menu-buttons mt-4">
+                    <button id="restart-btn" class="btn primary-btn">Volver a Duelear</button>
+                    <button id="back-from-result-btn" class="btn secondary-btn">Volver al Menú</button>
+                </div>
             </div>
         </section>
     </main>
