@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Duelo - Ravenclaw</title>
+    <meta name="description" content="Simulador de duelo interactivo para estudiantes de la casa Ravenclaw. Practica tus contrahechizos y mímicas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="bg-stars"></div>
+    <div class="bg-glow"></div>
+    
+    <main class="container">
+        <!-- Pantalla de Inicio -->
+        <section id="start-screen" class="screen active">
+            <div class="glass-panel text-center">
+                <div class="house-emblem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/RavenclawCrest.png/400px-RavenclawCrest.png" alt="Emblema de Ravenclaw" class="ravenclaw-logo" onerror="this.style.display='none'">
+                </div>
+                <h1 class="main-title">Simulador de Duelo</h1>
+                <h2 class="subtitle">Casa Ravenclaw</h2>
+                <p class="description">Pon a prueba tu intelecto y rapidez. Demuestra que posees la mente más aguda del Club de Duelo.</p>
+                <button id="start-btn" class="btn primary-btn mt-4">Iniciar Entrenamiento</button>
+            </div>
+        </section>
+
+        <!-- Pantalla de Juego -->
+        <section id="game-screen" class="screen hidden">
+            <div class="game-header">
+                <span id="round-indicator" class="round-badge">Ronda 1/10</span>
+                <span id="score-indicator" class="score-badge">Puntaje: 0</span>
+            </div>
+            
+            <div class="glass-panel question-panel">
+                <h2 id="question-text" class="question">Cargando pregunta...</h2>
+                <div id="options-container" class="options-grid">
+                    <!-- Los botones de opciones se generarán aquí con JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalla de Resultados -->
+        <section id="result-screen" class="screen hidden">
+            <div class="glass-panel text-center">
+                <h1 class="main-title">Entrenamiento Completado</h1>
+                <div class="score-display">
+                    <span id="final-score" class="score-number">0</span><span class="score-total">/10</span>
+                </div>
+                <p id="score-message" class="score-message">Calculando resultados...</p>
+                
+                <div id="errors-container" class="errors-list">
+                    <!-- Resumen de errores se generará aquí -->
+                </div>
+                
+                <button id="restart-btn" class="btn primary-btn mt-4">Volver a Duelear</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
