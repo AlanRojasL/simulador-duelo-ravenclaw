@@ -223,14 +223,14 @@ function renderSpellsGrid(category) {
 
         card.innerHTML = `
             <h3 class="spell-name">${spell.hechizo}</h3>
-            <span class="spell-pronunciation">${spell.pronunciacion || 'Pronunciación desconocida'}</span>
+            ${spell.pronunciacion ? `<span class="spell-pronunciation">${spell.pronunciacion}</span>` : ''}
             <div class="spell-block">
                 <strong>Descripción:</strong>
                 <span>${spell.descripcion || 'Sin descripción.'}</span>
             </div>
             <div class="spell-block">
                 <strong>Mímica:</strong>
-                <span>${spell.mimica || 'Movimiento estándar.'}</span>
+                <span>${spell.mimica || 'No requiere mímica'}</span>
             </div>
             ${dynamicFieldHTML}
         `;

@@ -732,7 +732,8 @@
         "Pericullum",
         "Vermillious",
         "Verdimillious"
-      ]
+      ],
+      "pronunciacion": "/epíski/"
     },
     {
       "hechizo": "Brackium Emendo",
@@ -743,7 +744,8 @@
         "Confringo",
         "Expulso",
         "Reducto"
-      ]
+      ],
+      "pronunciacion": "/brákium eméndo/"
     },
     {
       "hechizo": "Ennervate",
@@ -751,7 +753,8 @@
       "mimica": null,
       "efectivo_contra": [
         "Desmaius"
-      ]
+      ],
+      "pronunciacion": null
     },
     {
       "hechizo": "Ferula",
@@ -768,7 +771,8 @@
         "Volate Ascendere",
         "Ventus",
         "Verdimillious"
-      ]
+      ],
+      "pronunciacion": "/férula/"
     },
     {
       "hechizo": "Reparifors",
@@ -776,7 +780,8 @@
       "mimica": null,
       "efectivo_contra": [
         "Impedimenta"
-      ]
+      ],
+      "pronunciacion": "/repárifors/"
     },
     {
       "hechizo": "Shock",
@@ -784,13 +789,15 @@
       "mimica": null,
       "efectivo_contra": [
         "Confundus"
-      ]
+      ],
+      "pronunciacion": "/shók/"
     },
     {
       "hechizo": "Vulnera Sanenturn",
       "descripcion": "Hechizo curativo avanzado para heridas graves de magia oscura.",
       "mimica": null,
-      "efectivo_contra": []
+      "efectivo_contra": [],
+      "pronunciacion": "/vúlnera sanéntur/"
     }
   ],
   "reglas": [
