@@ -393,15 +393,22 @@ function endGame() {
     showScreen('result');
     DOM.result.finalScore.innerText = state.score;
     
-    if (state.score === 10) {
-        DOM.result.scoreMessage.innerText = "¡Excepcional! Digno de la inteligencia de Rowena Ravenclaw.";
-    } else if (state.score >= 7) {
-        DOM.result.scoreMessage.innerText = "Muy buen trabajo. Estás casi listo para el Club de Duelo.";
-    } else if (state.score >= 4) {
-        DOM.result.scoreMessage.innerText = "Necesitas estudiar más en la Biblioteca de Duelo.";
-    } else {
-        DOM.result.scoreMessage.innerText = "Un desastre. ¡Gilderoy Lockhart lo haría mejor!";
-    }
+    // Nuevo sistema de mensajes temáticos
+    const ravenclawMessages = [
+        "Un desastre absoluto. ¡Incluso Gilderoy Lockhart tendría más reflejos que tú! Regresa a la Biblioteca de Duelo.",
+        "Una mente sin límites es el mayor tesoro, pero hoy dejaste la tuya en la Sala Común. Tienes mucha teoría por repasar.",
+        "El conocimiento es tu mejor escudo, y ahora mismo estás completamente desarmado. ¡Concéntrate y vuelve a los libros!",
+        "Tu agudeza mental parece estar bajo los efectos de un encantamiento Confundus. Las águilas vuelan más alto que esto.",
+        "Raspando la mediocridad. Un verdadero Ravenclaw no confía en la suerte; confía en su memoria y su agilidad mental.",
+        "Justo a la mitad. Conoces los nombres, pero necesitas estudiar mucho más para sobrevivir en la plataforma de duelo.",
+        "Aceptable, pero recuerda que el intelecto requiere disciplina. Un repaso más en la Biblioteca pulirá esos errores.",
+        "Muy buen trabajo. Estás casi listo para el Club de Duelo. Tu mente analítica ya empieza a guiar tu varita.",
+        "¡Destacado! Una demostración de ingenio y rapidez digna de nuestra casa. Ya eres un rival de temer en la arena.",
+        "¡Brillante! Solo un minúsculo desliz te separó de la perfección. Tienes la sabiduría táctica de un verdadero campeón.",
+        "¡Excepcional! Digno de la inteligencia de Rowena Ravenclaw. Una ejecución perfecta, veloz y con una memoria impecable."
+    ];
+
+    DOM.result.scoreMessage.innerText = ravenclawMessages[state.score];
 
     DOM.result.errorsContainer.innerHTML = '';
     if (state.errors.length === 0) {
